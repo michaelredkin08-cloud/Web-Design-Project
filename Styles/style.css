@@ -18,7 +18,7 @@ header {
 
 h1 {
     font-size: 2rem;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     letter-spacing: 2px;
     color: #f2c14e;
     font-style: italic;
