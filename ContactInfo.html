@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Contact and Join page for Clash Royale University Club">
+    <meta name="keywords" content="contact gaming club, join university club, Clash Royale membership">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact / Join</title>
-
+    <link rel="icon" type="image/png" href="Images/royal_club_logo.jpg"> <!--favicon-->
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Used to preconnect the font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,8 +23,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Memberships.html">Memberships</a></li>
-            <li><a href="Events.html">Events</a></li>
-            <li><a href="ContactInfo.html">Contact/Join</a></li>
+            <li><a href="ContactInfo.html" class="active">Contact/Join</a></li>
             <li><a href="AboutUs.html">About</a></li>
         </ul>
     </nav>
@@ -36,35 +36,42 @@
         Fill in the form below to join the Clash Royale University Club.
     </p>
 
-    <form class="join-form" method="get">
-        <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+    <form class="join-form" action="http://foo.com" method="get">
+    <label for="fullname">Full Name <span class="required">*</span></label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email">
+    <label for="email">Email Address <span class="required">*</span></label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-        <label for="course">Course / Programme</label>
-        <input type="text" id="course" name="course" placeholder="Enter your course">
+    <label for="course">Course / Programme</label>
+    <input type="text" id="course" name="course" placeholder="Enter your course">
 
-        <label for="experience">Game Experience</label>
-        <select id="experience" name="experience">
-            <option>Beginner</option>
-            <option>Intermediate</option>
-            <option>Advanced</option>
-        </select>
+    <label for="experience">Game Experience</label>
+    <select id="experience" name="experience">
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+    </select>
 
-        <label for="favouritecard">Favourite Card</label>
-        <input type="text" id="favouritecard" name="favouritecard" placeholder="Example: Mega Knight">
+    <label for="favouritecard">Favourite Card</label>
+    <input type="text" id="favouritecard" name="favouritecard" placeholder="Example: Mega Knight">
 
-        <label for="message">Why do you want to join?</label>
-        <textarea id="message" name="message" rows="5" placeholder="Write here..."></textarea>
+    <label for="message">Why do you want to join? <span class="required">*</span></label>
+    <textarea id="message" name="message" rows="5" placeholder="Write here..." required></textarea>
 
-        <input type="submit" value="Submit">
+    <input type="submit" value="Submit">
     </form>
 </main>
 
 <footer>
-    <p>&copy; 2026 Clash Royale University club</p>
+    <p>&copy; 2026 Clash Royale University Club</p>
+
+    <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="Memberships.html">Memberships</a>
+        <a href="ContactInfo.html">Contact</a>
+        <a href="AboutUs.html">About</a>
+    </nav>
 </footer>
 
 </body>
